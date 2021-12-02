@@ -1,3 +1,5 @@
+//embed de spotify
+
 let playlist = [
   {
     nombre: "Oldies To Sing Out Loud",
@@ -21,6 +23,7 @@ let mainGender = prompt(
 );
 let mainGenderinput = mainGender.toLowerCase();
 if (mainGenderinput === "clasicos") {
+  //no estoy seguro de si esto es correcto, funciona...pero podria simplificarse?
   document.getElementById("playlistsrc").src = playlist[0].ruta;
 } else if (mainGenderinput === "clasica") {
   document.getElementById("playlistsrc").src = playlist[1].ruta;
